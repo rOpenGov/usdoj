@@ -72,7 +72,7 @@ install_github("stephbuon/usdoj")
 | ------------- | ------------- |
 | `n_results`  | The number of results to return. By default, 50 results are returned.  |
 | `search_direction`  | Set to `ASC` or `DESC` to fetch data starting from the most or least recent entries. By default, data is sorted in descending order (the most recent entries).  |
-| `keyword` | Only return results containing a keyword. Keyword can be a single word, a list or words, or a regex separated by `|`|
+| `keyword` | Only return results containing a keyword. Keyword can be a single word, a list or words, or a regex separated by the pipe delimiter|
 | `clean` | Set to `FALSE` to return data without additional cleaning. By default HTML tags, white space, line breaks, and other messy characters are removed. Epoch time is converted to year-month-day format.  |
 
 ### Usage
