@@ -1,0 +1,31 @@
+#' @export
+doj_blog_entries <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
+
+  if(!(search_direction == "ASC" | search_direction == "DESC")) {
+    stop("Please specify ascending \"ASC\" or descending \"DESC\" order for search direction.") }
+
+  base <- "http://www.justice.gov/api/v1/blog_entries.json?"
+  pagesize <- "&pagesize="
+  pagesize_n <- 50
+  sort <- "&sort=date"
+  direction <- "&direction="
+  page <- "&page="
+  api_url <- paste0(base, pagesize, pagesize_n, sort, direction, search_direction, page)
+
+  cycle <- ceiling(n_results/pagesize_n)
+  pagesize_n <- as.character(pagesize_n)
+
+  results <- fetch_data(api_url, cycle, pagesize_n, clean, page_n=0, n_results, keyword, search_direction) # edited
+
+  results <- results %>%
+    add_column(name = NA)
+
+  for(i in 1:nrow(results)) {
+    # Insert by row if nested list isn't empty
+    if(length(results[[4]][[i]]) > 0) {
+      results[[12]][[i]] <- paste0(results[[4]][[i]][[2]], collapse = " ", sep = ",") } }
+
+  results <- results %>%
+    select(-component, -attachments)
+
+  return(clean_dates(results)) }

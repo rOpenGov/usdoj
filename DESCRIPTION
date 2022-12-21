@@ -11,6 +11,7 @@ Depends:
     dplyr,
     stringr,
     tidyr,
+    tibble,
     anytime
 URL: https://github.com/stephbuon/usdoj
 BugReports: https://github.com/stephbuon/usdoj/issues
