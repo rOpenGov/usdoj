@@ -1,3 +1,4 @@
+#' @importFrom anytime anydate
 #' @noRd
 clean_dates <- function(results) {
 

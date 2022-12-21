@@ -1,3 +1,4 @@
+#' @importFrom tibble add_column
 #' @export
 doj_blog_entries <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
 
