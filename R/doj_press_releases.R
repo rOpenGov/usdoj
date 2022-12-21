@@ -1,4 +1,6 @@
 #' @importFrom tibble add_column
+#' @importFrom dplyr select
+#' @importFrom dplyr %>%
 #' @export
 doj_press_releases <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
 

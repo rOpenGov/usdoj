@@ -1,4 +1,7 @@
 #' @importFrom tibble add_column
+#' @importFrom dplyr select
+#' @importFrom dplyr %>%
+#' @importFrom stringr str_trim
 #' @export
 doj_speeches <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
 
