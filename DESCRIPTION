@@ -1,11 +1,25 @@
 Package: usdoj
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: usdoj: For Accessing U.S. Department of Justice (DOJ) Open Data 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Steph", "Buongiorno", , "steph.buon@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6965-0787"))
+Maintainer: Steph Buongiorno <steph.buon@gmail.com>
+Depends:
+    httr,
+    jsonlite,
+    dplyr,
+    stringr,
+    tidyr,
+    anytime
+URL: https://github.com/stephbuon/usdoj
+BugReports: https://github.com/stephbuon/usdoj/issues
+Description: usdoj is an R package for fetching data from the United States Department of Justice API such 
+    as press releases, blog entries, and speeches. Optional parameters give users the ability to specify the 
+    number of results starting from the earlist or latest entries, and whether these results contain keywords. 
+    Data is returned in a dataframe. 
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+
