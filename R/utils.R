@@ -4,6 +4,9 @@
 #' @importFrom anytime anydate
 #' @noRd
 clean_dates <- function(results) {
+  date = ""
+  created = ""
+  changed = ""
 
   results %>%
     mutate(date = anydate(as.numeric(date)),
@@ -52,6 +55,8 @@ slicey <- function(df, search_direction, n_results) {
 #' @importFrom jsonlite fromJSON
 #' @noRd
 fetch_data <- function(api_url, cycle, pagesize_n, clean, page_n, n_results, keyword, search_direction) {
+  image <- ""
+  topic <- ""
 
   out <- data.frame()
   while(nrow(out) < n_results) {

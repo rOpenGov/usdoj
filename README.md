@@ -72,6 +72,7 @@ install_github("stephbuon/usdoj")
 | ------------- | ------------- |
 | `n_results`  | The number of results to return. By default, 50 results are returned.  |
 | `search_direction`  | Set to `ASC` or `DESC` to fetch data starting from the most or least recent entries. By default, data is sorted in descending order (the most recent entries).  |
+| `keyword` | Only return results containing a keyword. Keyword can be a single word, a list or words, or a regex separated by `|`|
 | `clean` | Set to `FALSE` to return data without additional cleaning. By default HTML tags, white space, line breaks, and other messy characters are removed. Epoch time is converted to year-month-day format.  |
 
 ### Usage
@@ -80,22 +81,22 @@ install_github("stephbuon/usdoj")
 library(usdoj)
 ```
 
-Return a dataframe with 50 results starting at the latest recorded press releases. Data is cleaned. 
+Return a dataframe with 50 of the latest recorded blog entries recorded. Data is cleaned. 
 ```
 doj_blog_entries()
 ```
 
-Return a dataframe with 10 results starting from the latest recorded press releases. Data is cleaned. 
+Return a dataframe with 10 of the latest recorded press releases. Data is cleaned. 
 ```
 doj_press_releases(n_results = 10, search_direction = "DESC")
 ```
 
-Return a dataframe with 130 results starting from the earliest recorded press releases. Data is not cleaned. 
+Return a dataframe with 130 of the earliest recorded speeches. Data is not cleaned. 
 ```
 doj_speeches(n_results = 130, search_direction = "ASC", clean = FALSE)
 ```
 
-Return a dataframe with 50 results where the body text includes keyword(s).
+Return a dataframe with 50 of the latest recorded blog entries where the body text includes keyword(s).
 ```
 doj_blog_entries(keyword = c("weapons", "firearms"))
 ```

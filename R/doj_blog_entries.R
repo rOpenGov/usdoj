@@ -3,6 +3,8 @@
 #' @importFrom dplyr %>%
 #' @export
 doj_blog_entries <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
+  component <- ""
+  attachments <- ""
 
   if(!(search_direction == "ASC" | search_direction == "DESC")) {
     stop("Please specify ascending \"ASC\" or descending \"DESC\" order for search direction.") }
