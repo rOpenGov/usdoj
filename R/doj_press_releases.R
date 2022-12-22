@@ -33,6 +33,8 @@ doj_press_releases <- function(n_results=50, search_direction="DESC", keyword=NU
   results <- results %>%
     select(-component, -attachment)
 
+  results$name <- str_replace(results$name, ",$", "")
+
   results <- messy_char_to_na(results)
 
   return(clean_dates(results)) }

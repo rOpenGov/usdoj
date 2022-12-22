@@ -34,6 +34,8 @@ doj_speeches <- function(n_results=50, search_direction="DESC", keyword=NULL, cl
   results <- results %>%
     select(-component, -attachment)
 
+  results$name <- str_replace(results$name, ",$", "")
+
   results <- messy_char_to_na(results)
 
   return(clean_dates(results)) }
