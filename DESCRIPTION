@@ -18,7 +18,7 @@ URL: https://github.com/stephbuon/usdoj
 BugReports: https://github.com/stephbuon/usdoj/issues
 Description: Fetch data from the United States Department of Justice API such 
     as press releases, blog entries, and speeches. Optional parameters give users the ability to specify the 
-    number of results starting from the earlist or latest entries, and whether these results contain keywords. 
+    number of results starting from the earliest or latest entries, and whether these results contain keywords. 
     Data is returned in a dataframe. 
 License: MIT + file LICENSE
 Encoding: UTF-8
