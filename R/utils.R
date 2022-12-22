@@ -1,4 +1,5 @@
 #' @importFrom dplyr %>%
+#' @importFrom dplyr across
 #' @importFrom dplyr everything
 #' @importFrom dplyr na_if
 #' @importFrom dplyr mutate
