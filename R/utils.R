@@ -3,16 +3,18 @@
 #' @importFrom dplyr everything
 #' @importFrom dplyr na_if
 #' @importFrom dplyr mutate
+#' @importFrom dplyr where
 #' @noRd
 messy_char_to_na <- function(df) {
   teaser = ""
   body = ""
 
-  df$teaser <- na_if(df$teaser, "character(0)")
-  df$body <- na_if(df$body, "character(0)")
+  #df$teaser <- na_if(df$teaser, "character(0)")
+  #df$body <- na_if(df$body, "character(0)")
 
   df %>%
-    mutate(across(everything(), ~na_if(., ""))) }
+    mutate(across(everything(), ~na_if(., ""))) %>%
+    mutate(across(where(is.character), ~ na_if(.x, "character(0)"))) }
 
 
 #' @importFrom anytime anydate
