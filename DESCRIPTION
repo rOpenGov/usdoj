@@ -13,7 +13,8 @@ Imports:
     httr,
     jsonlite,
     stringr,
-    tibble
+    tibble,
+    tidyselect
 URL: https://github.com/stephbuon/usdoj
 BugReports: https://github.com/stephbuon/usdoj/issues
 Description: Fetch data from the United States Department of Justice API such 

@@ -3,7 +3,7 @@
 #' @importFrom dplyr everything
 #' @importFrom dplyr na_if
 #' @importFrom dplyr mutate
-#' @importFrom dplyr where
+#' @importFrom tidyselect where
 #' @noRd
 messy_char_to_na <- function(df) {
   teaser = ""
