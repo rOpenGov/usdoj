@@ -1,7 +1,8 @@
-#' @importFrom tibble add_column
 #' @importFrom dplyr select
 #' @importFrom dplyr %>%
+#' @importFrom stringr str_replace
 #' @importFrom stringr str_trim
+#' @importFrom tibble add_column
 #' @export
 doj_speeches <- function(n_results=50, search_direction="DESC", keyword=NULL, clean=TRUE) {
   component <- ""
@@ -20,7 +21,7 @@ doj_speeches <- function(n_results=50, search_direction="DESC", keyword=NULL, cl
   cycle <- ceiling(n_results/pagesize_n)
   pagesize_n <- as.character(pagesize_n)
 
-  results <- fetch_data(api_url, cycle, pagesize_n, clean, page_n=0, n_results, keyword, search_direction) # edited
+  results <- fetch_data(api_url, cycle, pagesize_n, clean, page_n=0, n_results, keyword, search_direction)
 
   results <- results %>%
     add_column(name = NA)
@@ -32,5 +33,7 @@ doj_speeches <- function(n_results=50, search_direction="DESC", keyword=NULL, cl
 
   results <- results %>%
     select(-component, -attachment)
+
+  results <- messy_char_to_na(results)
 
   return(clean_dates(results)) }

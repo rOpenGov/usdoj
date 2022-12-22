@@ -1,19 +1,19 @@
 Package: usdoj
 Title: For Accessing U.S. Department of Justice (DOJ) Open Data 
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Steph", "Buongiorno", , "steph.buon@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6965-0787"))
 Maintainer: Steph Buongiorno <steph.buon@gmail.com>
 Depends: 
-    R (>= 3.50)
+    R (>= 3.44)
 Imports:
+    anytime,
+    dplyr,
     httr,
     jsonlite,
-    dplyr,
     stringr,
-    tibble,
-    anytime
+    tibble
 URL: https://github.com/stephbuon/usdoj
 BugReports: https://github.com/stephbuon/usdoj/issues
 Description: Fetch data from the United States Department of Justice API such 
