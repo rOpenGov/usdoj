@@ -9,9 +9,6 @@ messy_char_to_na <- function(df) {
   teaser = ""
   body = ""
 
-  #df$teaser <- na_if(df$teaser, "character(0)")
-  #df$body <- na_if(df$body, "character(0)")
-
   df %>%
     mutate(across(everything(), ~na_if(., ""))) %>%
     mutate(across(where(is.character), ~ na_if(.x, "character(0)"))) }
