@@ -21,7 +21,7 @@ Description: Fetch data from the United States Department of Justice API such
     as press releases, blog entries, and speeches. Optional parameters give users the ability to specify the 
     number of results starting from the earliest or latest entries, and whether these results contain keywords. 
     Data is returned in a dataframe. 
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
