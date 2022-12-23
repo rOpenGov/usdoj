@@ -1,6 +1,6 @@
 # usdoj: Accessing U.S. Department of Justice (DOJ) API Data
 
-usdoj is an R package for fetching data from the United States Department of Justice API such as press releases, blog entries, and speeches. Optional parameters give users the ability to specify the number of results starting from the earliest or latest entries, and whether these results contain keywords. Data is returned in a dataframe.
+usdoj fetches data from the United States Department of Justice API such as press releases, blog entries, and speeches. Optional parameters allow users to specify the number of results starting from the earliest or latest entries, and whether these results contain keywords. Data is cleaned for analysis and returned in a dataframe.
 
 ### Install 
 
