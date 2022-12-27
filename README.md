@@ -15,7 +15,7 @@ require(devtools)
 install_github("stephbuon/usdoj")
 ```
 
-### Data
+### Usage
 
 `doj_press_releases()` returns a dataframe with the following fields: 
 
@@ -66,7 +66,7 @@ install_github("stephbuon/usdoj")
 - vuuid: A universal unique identifier for a specific version of a single result
 - name: The related office(s)
 
-### Optional Arguments
+#### Optional Arguments
 
 | Argument | Description |
 | ------------- | ------------- |
@@ -75,7 +75,7 @@ install_github("stephbuon/usdoj")
 | `keyword` | Only return results containing a keyword. Keyword can be a single word, a list or words, or a regex separated by the pipe delimiter|
 | `clean` | Set to `FALSE` to return data without additional cleaning. By default HTML tags, white space, line breaks, and other messy characters are removed. Epoch time is converted to year-month-day format.  |
 
-### Usage
+### Examples
 
 ```
 library(usdoj)
