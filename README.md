@@ -11,7 +11,8 @@ install.packages("usdoj")
 
 Install from GitHub:
 ```
-require(devtools)
+# install.packages("devtools")
+library(devtools)
 install_github("stephbuon/usdoj")
 ```
 
@@ -100,6 +101,13 @@ Return a dataframe with 50 of the latest recorded blog entries where the body te
 ```
 doj_blog_entries(keyword = c("weapons", "firearms"))
 ```
+
+
+### Citation
+
+Please cite the package as follows: 
+
+Steph Buongiorno (2023). usdoj: Accessing U.S. Department of Justice (DOJ) API Data. R package version 1.0.0.
 
 **Note**
 
