@@ -20,52 +20,52 @@ install_github("stephbuon/usdoj")
 
 `doj_press_releases()` returns a dataframe with the following fields: 
 
-- body: The text body of a press release
-- changed: Date data was changed
-- created: Date data was created
-- date: Date of press release content
-- teaser: A blurb about the press release
-- title: The title of the press release
-- url: The URL for the original press release relating to the Attorney's Office and hosted by the U.S. DOJ
-- uuid: A universal unique identifier for a single result
-- vuuid: A universal unique identifier for a specific version of a single result
-- name: The related office(s)
+- **body:** The text body of a press release
+- **changed:** Date data was changed
+- **created:** Date data was created
+- **date:** Date of press release content
+- **teaser:** A blurb about the press release
+- **title:** The title of the press release
+- **url:** The URL for the original press release relating to the Attorney's Office and hosted by the U.S. DOJ
+- **uuid:** A universal unique identifier for a single result
+- **vuuid:** A universal unique identifier for a specific version of a single result
+- **name:** The related office(s)
 
 `doj_speeches()` returns a dataframe with the following fields: 
 
-- body: The text body of a speech
-- changed: Date data was changed 
-- created: Date data was created
-- date: Date of speech
-- teaser: A blurb about the speech
-- title: The title of the speech
-- url: The URL for the original press release hosted by the Department of Justice
-- uuid: A universal, unique identifier for a single result
-- vuuid: A universal, unique identifier for a specific version of a single result
-- location.country: Country location
-- location.administrative_area: Administrative area
-- location.locality: City 
-- location.postal_code: postal code
-- location.thoroughfare:
-- location.sub_premise:
-- location.phone_number: 
-- location.phone_number_extension:
-- location.mobile_number:
-- location.fax_number:
-- name: The related office(s)
+- **body:** The text body of a speech
+- **changed:** The date data was changed 
+- **created:** The date data was created
+- **date:** Date of speech
+- **teaser:** A blurb about the speech
+- **title:** The title of the speech
+- **url:** The URL for the original press release hosted by the Department of Justice
+- **uuid:** A universal, unique identifier for a single result
+- **vuuid:** A universal, unique identifier for a specific version of a single result
+- **location.country:** Country location
+- **location.administrative_area:** Administrative area
+- **location.locality:** City 
+- **location.postal_code:** Postal code
+- **location.thoroughfare:** Way of travel
+- **location.sub_premise:** Discrete location
+- **location.phone_number:** Phone number of location
+- **location.phone_number_extension:** Extension of the phone number
+- **location.mobile_number:** Mobile number of location
+- **location.fax_number:** Fax number of location
+- **name:** The related office(s)
 
 `doj_blog_entries` returns a dataframe with the following fields: 
 
-- body: The text body of a blog entry
-- changed: Date data was changed
-- created: Date data was created
-- date: Date of press release content
-- teaser: A blurb about the blog entry
-- title: The title of the blog entry
-- url: The URL for the original blog release from "Justice Blogs," by the U.S. DOJ
-- uuid: A universal unique identifier for a single result
-- vuuid: A universal unique identifier for a specific version of a single result
-- name: The related office(s)
+- **body:** The text body of a blog entry
+- **changed:** Date data was changed
+- **created:** Date data was created
+- **date:** Date of press release content
+- **teaser:** A blurb about the blog entry
+- **title:** The title of the blog entry
+- **url:** The URL for the original blog release from "Justice Blogs," by the U.S. DOJ
+- **uuid:** A universal unique identifier for a single result
+- **vuuid:** A universal unique identifier for a specific version of a single result
+- **name:** The related office(s)
 
 #### Optional Arguments
 
@@ -116,3 +116,4 @@ usdoj manages request rate limits in compliance with the Department of Justice A
 **Disclaimer**
 
 This package is not officially related to or endorsed by the U.S. Department of Justice. 
+
