@@ -13,7 +13,7 @@ Install from GitHub:
 ```
 # install.packages("devtools")
 library(devtools)
-install_github("stephbuon/usdoj")
+install_github("rOpenGov/usdoj")
 ```
 
 ### Usage
