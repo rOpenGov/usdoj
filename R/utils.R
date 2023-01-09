@@ -3,16 +3,14 @@
 #' @importFrom dplyr everything
 #' @importFrom dplyr na_if
 #' @importFrom dplyr mutate
-#' @importFrom tidyselect where
 #' @noRd
 messy_char_to_na <- function(df) {
   teaser = ""
   body = ""
 
-  df %>%
-    mutate(across(everything(), ~na_if(., ""))) %>%
-    mutate(across(where(is.character), ~ na_if(.x, "character(0)"))) }
-
+  df[df == ""] <- NA
+  df[df == "character(0)"] <- NA
+  return(df) }
 
 #' @importFrom anytime anydate
 #' @importFrom dplyr filter
