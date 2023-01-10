@@ -9,11 +9,15 @@ Install from CRAN:
 install.packages("usdoj")
 ```
 
-Install from GitHub:
+Install from the rOpenGov universe:
 ```
-# install.packages("devtools")
-library(devtools)
-install_github("rOpenGov/usdoj")
+# Enable repository from ropengov
+options(repos = c(
+  ropengov = 'https://ropengov.r-universe.dev',
+  CRAN = 'https://cloud.r-project.org'))
+  
+# Download and install usdoj
+install.packages("usdoj")
 ```
 
 ### Usage
