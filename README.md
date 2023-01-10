@@ -9,7 +9,7 @@ Install from CRAN: (forthcoming)
 install.packages("usdoj")
 ```
 
-Install from the rOpenGov universe:
+Install from the [rOpenGov universe](https://ropengov.r-universe.dev/ui#builds):
 ```
 # Enable repository from ropengov
 options(repos = c(
