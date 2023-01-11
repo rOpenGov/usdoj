@@ -111,7 +111,19 @@ doj_blog_entries(keyword = c("weapons", "firearms"))
 
 Please cite the package as follows: 
 
-Steph Buongiorno (2023). usdoj: Accessing U.S. Department of Justice (DOJ) API Data. R package version 1.0.0.
+Buongiorno S (2023). usdoj: For Accessing U.S. Department of Justice (DOJ) Open Data. https://github.com/stephbuon/usdoj, https://ropengov.github.io/usdoj/, https://github.com/rOpenGov/usdoj.
+
+BibTeX: 
+
+```
+@Manual{,
+  title = {usdoj: For Accessing U.S. Department of Justice (DOJ) Open Data},
+  author = {Steph Buongiorno},
+  year = {2023},
+  note = {https://github.com/stephbuon/usdoj,
+https://ropengov.github.io/usdoj/, https://github.com/rOpenGov/usdoj},
+}
+```
 
 **Note**
 
