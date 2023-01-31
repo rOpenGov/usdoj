@@ -4,7 +4,7 @@ usdoj fetches data from the [United States Department of Justice API](https://ww
 
 ### Install 
 
-Install from CRAN: (forthcoming)
+Install from CRAN:
 ```
 install.packages("usdoj")
 ```
