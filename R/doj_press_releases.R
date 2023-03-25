@@ -7,9 +7,6 @@ doj_press_releases <- function(n_results=50, search_direction="DESC", keyword=NU
   component <- ""
   attachment <- ""
 
-  if(!(search_direction == "ASC" | search_direction == "DESC")) {
-    stop("Please specify ascending \"ASC\" or descending \"DESC\" order for search direction.") }
-
   base <- "https://www.justice.gov/api/v1/press_releases.json?"
   pagesize <- "&pagesize="
   pagesize_n <- 50
@@ -20,6 +17,7 @@ doj_press_releases <- function(n_results=50, search_direction="DESC", keyword=NU
   cycle <- ceiling(n_results/pagesize_n)
   pagesize_n <- as.character(pagesize_n)
 
+  #print(api_url)
   results <- fetch_data(api_url, cycle, pagesize_n, clean, page_n=0, n_results, keyword, search_direction)
 
   results <- results %>%
