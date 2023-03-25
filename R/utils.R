@@ -81,7 +81,6 @@ fetch_data <- function(api_url, cycle, pagesize_n, clean, page_n, n_results, key
       raw_data <- GET(paste0(api_url, "&page=", page_n))
       Sys.sleep(.2)
 
-      print(api_url)
       data <- fromJSON(rawToChar(raw_data$content), flatten = TRUE)
       df <- data$results
 
