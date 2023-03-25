@@ -1,6 +1,6 @@
 Package: usdoj
 Title: For Accessing U.S. Department of Justice (DOJ) Open Data 
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: 
     person("Steph", "Buongiorno", , "steph.buon@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6965-0787"))
