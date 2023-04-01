@@ -106,6 +106,7 @@ Return a dataframe with 50 of the latest recorded blog entries where the body te
 doj_blog_entries(keyword = c("weapons", "firearms"))
 ```
 
+![alt text](https://github.com/stephbuon/homepage/blob/master/content/post/2023-04-01-usdoj-cran-release/index.en_files/figure-html/unnamed-chunk-1-1.png)
 
 ### Citation
 
