@@ -30,7 +30,7 @@ latest_records <- doj_blog_entries()
 head(latest_records)
 
 # Return a dataframe with 15 of the earliest records. Data is not cleaned.
-earliest_records <- doj_blog_entries(n_results = 15, search_direction = "ASC", clean = FALSE)
+earliest_records <- doj_blog_entries(n_results = 15, search_direction = "ASC")
 head(earliest_records)
 }
 

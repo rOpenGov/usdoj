@@ -30,6 +30,6 @@
   head(latest_records)
 
   # Return a dataframe with 15 of the earliest records. Data is not cleaned.
-  earliest_records <- doj_press_releases(n_results = 15, search_direction = "ASC", clean = FALSE)
+  earliest_records <- doj_press_releases(n_results = 15, search_direction = "ASC")
   head(earliest_records)
 }
