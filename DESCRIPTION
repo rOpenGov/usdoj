@@ -20,5 +20,4 @@ Description: Fetch data from the <https://www.justice.gov/developer/api-document
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
-
+RoxygenNote: 7.3.2

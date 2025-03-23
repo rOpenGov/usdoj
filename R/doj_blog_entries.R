@@ -26,10 +26,7 @@ doj_blog_entries <- function(n_results=50, search_direction="DESC", keyword=NULL
   results <- results %>%
     add_column(name = NA)
 
-  for(i in 1:nrow(results)) {
-    # Insert by row if nested list isn't empty
-    if(length(results[[4]][[i]]) > 0) {
-      results[[12]][[i]] <- paste0(results[[4]][[i]][[2]], collapse = " ", sep = ",") } }
+  devtools::document()
 
   results <- results %>%
     select(-component, -attachments)
