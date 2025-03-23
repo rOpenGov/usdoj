@@ -26,8 +26,6 @@ doj_blog_entries <- function(n_results=50, search_direction="DESC", keyword=NULL
   results <- results %>%
     add_column(name = NA)
 
-  devtools::document()
-
   results <- results %>%
     select(-component, -attachments)
 
