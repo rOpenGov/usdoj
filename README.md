@@ -35,29 +35,6 @@ install.packages("usdoj")
 - **vuuid:** A universal unique identifier for a specific version of a single result
 - **name:** The related office(s)
 
-`doj_speeches()` returns a dataframe with the following fields: 
-
-- **body:** The text body of a speech
-- **changed:** The date data was changed 
-- **created:** The date data was created
-- **date:** Date of speech
-- **teaser:** A blurb about the speech
-- **title:** The title of the speech
-- **url:** The URL for the original press release hosted by the Department of Justice
-- **uuid:** A universal, unique identifier for a single result
-- **vuuid:** A universal, unique identifier for a specific version of a single result
-- **location.country:** Country location
-- **location.administrative_area:** Administrative area
-- **location.locality:** City 
-- **location.postal_code:** Postal code
-- **location.thoroughfare:** Way of travel
-- **location.sub_premise:** Discrete location
-- **location.phone_number:** Phone number of location
-- **location.phone_number_extension:** Extension of the phone number
-- **location.mobile_number:** Mobile number of location
-- **location.fax_number:** Fax number of location
-- **name:** The related office(s)
-
 `doj_blog_entries` returns a dataframe with the following fields: 
 
 - **body:** The text body of a blog entry
