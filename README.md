@@ -59,6 +59,7 @@ install.packages("usdoj")
 
 ### Examples
 
+Load `usdoj`.
 ```
 library(usdoj)
 ```
