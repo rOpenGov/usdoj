@@ -1,6 +1,6 @@
 # usdoj: Accessing U.S. Department of Justice (DOJ) API Data
 
-usdoj fetches blog entries and press releases from the [United States Department of Justice API](https://www.justice.gov/developer/api-documentation/api_v1).Optional parameters let users choose how many results to return, whether to start from the earliest or latest entries, and whether to include only results that contain specific keywords. Data is structured for analysis and returned in a dataframe.
+usdoj fetches blog entries and press releases from the [United States Department of Justice API](https://www.justice.gov/developer/api-documentation/api_v1). Optional parameters let users choose how many results to return, whether to start from the earliest or latest publications, and whether to include only results that contain specific keywords. Data is structured for analysis and returned in a dataframe.
 
 ### Install 
 
