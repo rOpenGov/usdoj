@@ -4,6 +4,7 @@
 [![](https://cranlogs.r-pkg.org/badges/usdoj)](https://cran.r-project.org/package=usdoj)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/usdoj)](https://cran.r-project.org/package=usdoj)
 [![](https://www.r-pkg.org/badges/version/usdoj)](https://CRAN.R-project.org/package=usdoj)
+[![R-CMD-check](https://github.com/YOUR_USERNAME/usdoj/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/YOUR_USERNAME/usdoj/actions/workflows/R-CMD-check.yaml)
 
 
 
