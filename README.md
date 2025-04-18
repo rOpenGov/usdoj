@@ -75,14 +75,9 @@ Return a dataframe with 50 of the latest recorded blog entries recorded. Data is
 doj_blog_entries()
 ```
 
-Return a dataframe with 10 of the latest recorded press releases. Data is cleaned. 
+Return a dataframe with 10 of the latest recorded press releases. Data is not cleaned. 
 ```
-doj_press_releases(n_results = 10, search_direction = "DESC")
-```
-
-Return a dataframe with 130 of the earliest recorded speeches. Data is not cleaned. 
-```
-doj_speeches(n_results = 130, search_direction = "ASC", clean = FALSE)
+doj_press_releases(n_results = 10, search_direction = "DESC", clean = FALSE)
 ```
 
 Return a dataframe with 50 of the latest recorded blog entries where the body text includes keyword(s).
