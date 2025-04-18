@@ -2,6 +2,8 @@
 
 
 [![](https://cranlogs.r-pkg.org/badges/usdoj)](https://cran.r-project.org/package=usdoj)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/usdoj)](https://cran.r-project.org/package=usdoj)
+
 
 
 usdoj fetches blog entries and press releases from the [United States Department of Justice API](https://www.justice.gov/developer/api-documentation/api_v1). Optional parameters let users choose how many results to return, whether to start from the earliest or latest publications, and whether to include only results that contain specific keywords. Data is cleaned and structured for analysis and returned in a dataframe.
