@@ -1,8 +1,8 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-04-18T02:13Z
+last_built: 2025-05-14T14:54Z
 urls:
   reference: https://ropengov.github.io/usdoj/reference
   article: https://ropengov.github.io/usdoj/articles
