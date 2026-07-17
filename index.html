@@ -13,8 +13,8 @@
 <link rel="manifest" href="site.webmanifest">
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="katex-auto.js"></script><script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="For Accessing U.S. Department of Justice (DOJ) Open Data">
 <meta name="description" content="Fetch data from the &lt;https://www.justice.gov/developer/api-documentation/api_v1&gt; API such as press releases, blog entries, and speeches. Optional parameters allow users to specify the number of results starting from the earliest or latest entries, and whether these results contain keywords. Data is cleaned for analysis and returned in a dataframe.">
@@ -144,24 +144,24 @@
 <col width="50%">
 <col width="50%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Argument</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code>n_results</code></td>
 <td>The number of results to return. By default, 50 results are returned.</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>search_direction</code></td>
 <td>Set to <code>ASC</code> or <code>DESC</code> to fetch data starting from the most or least recent entries. By default, data is sorted in descending order (the most recent entries).</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>keyword</code></td>
 <td>Only return results containing a keyword. Keyword can be a single word, a list or words, or a regex separated by the pipe delimiter</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>clean</code></td>
 <td>Set to <code>FALSE</code> to return data without additional cleaning. By default HTML tags, white space, line breaks, and other messy characters are removed. Epoch time is converted to year-month-day format.</td>
 </tr>
@@ -210,9 +210,8 @@ https://ropengov.github.io/usdoj/, https://github.com/rOpenGov/usdoj},
 <li><a href="https://cloud.r-project.org/package=usdoj" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/rOpenGov/usdoj/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/rOpenGov/usdoj/issues" class="external-link">Report a bug</a></li>
-<li>
-<a href="https://ropengov.org/" class="external-link">Part of<span class="mini_logo ms-2">r<img src="rog_logo.svg" height="20" alt="rOpenGov logo" class="round-logo">penGov</span></a>
-</li>
+<li><a href="https://ropengov.org/" class="external-link">Part of<span class="mini_logo ms-2">r<img src="rog_logo.svg" height="20" alt="rOpenGov logo" class="round-logo">penGov</span>
+</a></li>
 </ul>
 </div>
 
@@ -250,7 +249,7 @@ https://ropengov.github.io/usdoj/, https://github.com/rOpenGov/usdoj},
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>
